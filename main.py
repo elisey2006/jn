@@ -25,7 +25,7 @@ while run:
         elif e.type == pygame.K_ESCAPE:
             run = False
             elif e.unicode.isdecimal() and block == 0
-            numeral 
+            numeral =  numeral
 
 
 font = pygame.ront.SysFont("Arial", 28, True, False)      
@@ -58,4 +58,8 @@ dialog = pygame.image.load("image/dialog.png")
 dialog_rect = dialog.get_rect()
 dialog_cat_pos = (cat_rect.x, cat_rect.y - dialog_rect.h)
 dialog_dog_pos = (dog_rect.x - dialog_rect.w // 2, dog_rect.y - dialog_rect.h)
-dialog_owl_pos = (owl_rect.x - dialog_rect.w // 2, owl_rect.y - dialog_rect.h)
+dialog_owl_pos = (owl_rect.x, owl_rect.y - dialog_rect.h)
+
+def dialogs(text, pos, owl_text):
+    screen.blit(dialog, pos)
+    screen.blit(fort2.render())
