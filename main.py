@@ -79,7 +79,8 @@ while run:
                         dialogs('Дог, твой ход', dialog_cat_pos, 'Продолжаем')
                 elif move == 2:
                     if int(numeral) == num:
-                        dialogs(f'Это число {numeral}', dialog_dog_pos, 'Дог, ты победил')
+                        dialogs(f'Это число {numeral}', dialog_dog_pos, 'Дог, т+
+                        ы победил')
                         block = 1
                     else:
                         dialogs('Кот, твой ход', dialog_dog_pos, 'Продолжаем')
